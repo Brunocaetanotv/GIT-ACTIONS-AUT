@@ -32,6 +32,7 @@ Se o projeto estiver no GitHub, os testes são executados automaticamente:
 - ✅ Acesse a aba "Actions" para ver resultados
 - ✅ Relatórios de cobertura online
 - ✅ Não precisa instalar nada localmente
+- ✅ Workflow configurado: `.github/workflows/ci.yml`
 
 ### ⚡ Execução Rápida Local
 Para executar todos os testes de uma vez:
