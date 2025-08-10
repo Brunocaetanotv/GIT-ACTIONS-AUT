@@ -24,6 +24,39 @@ Testing is a critical part of software development, and this task is designed to
 - Please include the tests along with clear instructions on how to run them.
 - The **deadline** for submitting this task is **Sunday at 6:00 PM**.
 
+## 🧪 Executando os Testes
+
+### 🚀 GitHub Actions (Mais Rápido - Automatizado)
+Se o projeto estiver no GitHub, os testes são executados automaticamente:
+- ✅ Push para qualquer branch ou Pull Request
+- ✅ Acesse a aba "Actions" para ver resultados
+- ✅ Relatórios de cobertura online
+- ✅ Não precisa instalar nada localmente
+
+### ⚡ Execução Rápida Local
+Para executar todos os testes de uma vez:
+
+```bash
+# No diretório raiz do projeto
+python run_all_tests.py
+```
+
+### 📚 Guia Detalhado
+Consulte o arquivo `TESTING_README.md` para instruções completas sobre:
+- Como executar testes individuais
+- Solução de problemas
+- Relatórios de cobertura
+- Estrutura dos testes
+- Configuração do GitHub Actions
+
+### 🎯 O que foi implementado
+- ✅ **Backend**: Testes completos para modelos, serializers e API endpoints
+- ✅ **Frontend**: Testes unitários e de integração para componentes
+- ✅ **Scripts**: Automação completa da execução de testes
+- ✅ **Documentação**: Guias detalhados para facilitar a execução
+- ✅ **GitHub Actions**: CI/CD automatizado com execução paralela
+- ✅ **Codecov**: Relatórios de cobertura online (opcional)
+
 ---
 
 If you have any questions or need clarification, feel free to reach out.

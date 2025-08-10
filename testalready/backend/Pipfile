@@ -8,6 +8,10 @@ django-cors-headers = "*"
 djangorestframework = "*"
 
 [dev-packages]
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
+factory-boy = "*"
 
 [requires]
 python_version = "3.12"

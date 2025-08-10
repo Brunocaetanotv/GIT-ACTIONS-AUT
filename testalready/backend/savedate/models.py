@@ -59,5 +59,5 @@ class SaveDate(models.Model):
 
    
     def __str__(self):
-        return f"{self.title} - {self.event_date}"
+        return f"{self.title} - {self.event_venue}"
     

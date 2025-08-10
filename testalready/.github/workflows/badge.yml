@@ -1,0 +1,28 @@
+name: 🏷️ Gerar Badge de Status
+
+on:
+  workflow_run:
+    workflows: ["🧪 Testes Automatizados"]
+    types:
+      - completed
+
+jobs:
+  generate-badge:
+    name: 🏷️ Gerar Badge
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion != 'skipped' }}
+    
+    steps:
+    - name: 📥 Checkout
+      uses: actions/checkout@v4
+      
+    - name: 🏷️ Gerar Badge
+      uses: schneegans/dynamic-badges@v1.8.0
+      with:
+        auth: ${{ secrets.GIST_SECRET }}
+        gistID: your-gist-id-here
+        filename: test-status.json
+        label: Testes
+        message: ${{ github.event.workflow_run.conclusion == 'success' && '✅ Passando' || '❌ Falhando' }}
+        color: ${{ github.event.workflow_run.conclusion == 'success' && 'green' || 'red' }}
+        namedLogo: github
